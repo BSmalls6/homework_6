@@ -7,12 +7,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <script src="https://code.jquery.com/jquery-3.4.1.js"
-  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-  crossorigin="anonymous"></script>
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/moment"></script>
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -35,11 +36,30 @@
             <div class="col-lg-7 bg-primary m-3 result">
             </div>
             <div class="col-lg-4 bg-white m-3 history"></div>
-            <div class="col-lg-7 bg-warning m-3 forecast"></div>
+            <div class="row forecast">
 
+                <div class="col bg-primary m-2 p-2 forecastDay" id="one">
+
+                </div>
+                <div class="col bg-primary m-2 p-2 forecastDay" id="two">
+
+                </div>
+                <div class="col bg-primary m-2 p-2 forecastDay" id="three">
+
+                </div>
+                <div class="col bg-primary m-2 p-2 forecastDay" id="four">
+
+                </div>
+                <div class="col bg-primary m-2 p-2 forecastDay" id="five">
+
+                </div>
+            </div>
         </section>
     </div>
     <script src="script.js"></script>
+    <script src="forecast.js"></script>
+    <script src="localStorage.js"></script>
+
 </body>
 
 </html>

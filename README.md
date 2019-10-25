@@ -1,6 +1,6 @@
-# Unit 06 Server-Side APIs Homework: Weather Dashboard
+# Unit 06 Server-Side ApIs Homework: Weather Dashboard
 
-Developers are often tasked with retrieving data from another application's API and using it in the context of their own. Third-party APIs allow developers to access their data and functionality by making requests with specific parameters to a URL. In this homework assignment, your challenge is to build a weather dashboard using the OpenWeather API.
+Developers are often tasked with retrieving data from another application's ApI and using it in the context of their own. Third-party ApIs allow developers to access their data and functionality by making requests with specific parameters to a URL. In this homework assignment, your challenge is to build a weather dashboard using the OpenWeather ApI.
 
 
 ## Instructions
@@ -15,9 +15,9 @@ so that I can plan a trip accordingly
 
 How do you deliver this? Here are some guidelines:
 
-* Use the [OpenWeather API](https://openweathermap.org/api) to retrieve weather data for cities. The documentation includes a section called "How to start" that will provide basic setup and usage instructions.
+* Use the [OpenWeather ApI](https://openweathermap.org/api) to retrieve weather data for cities. The documentation includes a section called "How to start" that will provide basic setup and usage instructions.
 
-* Use AJAX to hook into the API to retrieve data in JSON format.
+* Use AJAX to hook into the ApI to retrieve data in JSON format.
 
 * Your app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery.
 
@@ -49,7 +49,7 @@ How do you deliver this? Here are some guidelines:
 
   * Humidity
 
-![weather dashboard](./Assets/06-Server-Side-APIs-homework-demo.png)
+![weather dashboard](./Assets/06-Server-Side-ApIs-homework-demo.png)
 
 
 ### Hints
@@ -66,7 +66,7 @@ How do you deliver this? Here are some guidelines:
 
 * You will need to make more than one AJAX call.
 
-* You will need to hardcode some of the parameters in the API's URL. User input will determine some of the other parameters.
+* You will need to hardcode some of the parameters in the ApI's URL. User input will determine some of the other parameters.
 
 * Use `localStorage` to store any persistent data.
 
@@ -77,7 +77,7 @@ How do you deliver this? Here are some guidelines:
 
 * GitHub repository with a unique name and a README describing the project.
 
-* User can search for weather reports by city using the openweathermap API.
+* User can search for weather reports by city using the openweathermap ApI.
 
 * After searching for a city, the following information is displayed:
 
@@ -99,7 +99,7 @@ How do you deliver this? Here are some guidelines:
 
 ## Bonus
 
-* Use the [Geolocation API](https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API) to add the user's current location to the initial landing page.
+* Use the [Geolocation ApI](https://developer.mozilla.org/en-US/docs/Web/ApI/Geolocation_ApI) to add the user's current location to the initial landing page.
 
 * Add the application to your portfolio.
 
