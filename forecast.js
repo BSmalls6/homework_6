@@ -12,16 +12,16 @@ var tomorrow = new Date();
 tomorrow.setDate(tomorrow.getDate() + 1);
 
 var day2 = new Date();
-tomorrow.setDate(tomorrow.getDate() + 2);
+day2.setDate(tomorrow.getDate() + 1);
 
 var day3 = new Date();
-tomorrow.setDate(tomorrow.getDate() + 3);
+day3.setDate(tomorrow.getDate() + 2);
 
 var day4 = new Date();
-tomorrow.setDate(tomorrow.getDate() + 4);
+day4.setDate(tomorrow.getDate() + 3);
 
 var day5 = new Date();
-tomorrow.setDate(tomorrow.getDate() + 5);
+day5.setDate(tomorrow.getDate() + 4);
 // var day2 = moment().add(2, 'days');
 // var day3 = moment().add(3, 'days');
 // var day4 = moment().add(4, 'days');
@@ -122,11 +122,11 @@ $("#go").on("click", function (event) {
         $("#five").append("<br>");
 
 
-        $("#one").append('Humidity:' + ' ' + tomoHumi);
-        $("#two").append('Humidity:' + ' ' + day2Humi);
-        $("#three").append('Humidity:' + ' ' + day3Humi);
-        $("#four").append('Humidity:' + ' ' + day4Humi);
-        $("#five").append('Humidity:' + ' ' + day5Humi);
+        $("#one").append('Humidity:' + ' ' + tomoHumi+'%');
+        $("#two").append('Humidity:' + ' ' + day2Humi+'%');
+        $("#three").append('Humidity:' + ' ' + day3Humi+'%');
+        $("#four").append('Humidity:' + ' ' + day4Humi+'%');
+        $("#five").append('Humidity:' + ' ' + day5Humi+'%');
 
     });
 

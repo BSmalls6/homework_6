@@ -22,25 +22,7 @@ $("#go").on("click", function (event) {
         var latitude = JSON.stringify(response.coord.lat);
         var longitude = JSON.stringify(response.coord.lon);
         var weatherIcon = (response.weather[0].icon)
-        // var UV = uvresult.value;
         
-        // call the uv api, get the results 
-
-        // $.ajax({
-        //     url: Uvquery,
-        //     method: "GET"
-        // }).then(function (uvresult) {
-        //     console.log(uvresult);
-        // });
-
-
-
-        // query url to find the uv, which lives in it's own api call
-
-        // Uvquery = "http://api.openweathermap.org/data/2.5/uvi?appid=" + apiKey + "&lat=" + latitude + "&lon=" + longitude + "";
-
-
-
         var today = new Date();
         var todate = (today.getMonth() + 1) + '/' + today.getDate(); +'/' + today.getFullYear();
         // console.log(response);
@@ -49,11 +31,10 @@ $("#go").on("click", function (event) {
         // // Creating a paragraph tag with the result item's rating
         var datep = $("<h2>").text("Date: " + todate);
         var wIcon = $("<img>").attr('src' , "http://openweathermap.org/img/wn/"+weatherIcon+"@2x.png")
-        var tempp = $("<p>").text("Temp: " + temp);
-        var hump = $("<p>").text("Humidity: " + humidity);
-        var windp = $("<p>").text("Wind Speed: " + windSpeed);
-        // var uvp = $("<p>").text("UV: " + UV);
-        // uvp.attr("id", "uvValue");
+        var tempp = $("<p>").text("Temp: " + temp +"f");
+        var hump = $("<p>").text("Humidity: " + humidity+'%');
+        var windp = $("<p>").text("Wind Speed: " + windSpeed+' '+'mph');
+        
         // // need to add CSS classes to style.css
         weatherNums.attr("class", "weatherText");
         // // Appending the paragraph and image tag to the Div

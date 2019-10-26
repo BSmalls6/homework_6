@@ -9,18 +9,13 @@ $("#go").on("click", function (event) {
 
     var city = $("#cityInput").val();
     var historyBox = $("<div></div>");
-    historyBox.attr("class" , "reSearch")
     var searchHistory = $("<button>").text(city);
+    searchHistory.attr("id" , "go")
+
     historyBox.attr("class", "list-group");
-    historyBox.append(searchHistory);
+    historyBox.append(searchHistory[0].outerHTML);
     $(".searchBox").append(historyBox);
 
-    localStorage.setItem("history" , searchHistory )
-
-    var pastButtons = localStorage.getItem('history');
-
-
-});
-$(".reSearch").on("click", function (event) {
-
+    localStorage.setItem("history" , searchHistory[0].outerHTML)
+    console.log(searchHistory[0].outerHTML);
 });
