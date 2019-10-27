@@ -19,8 +19,6 @@ $("#go").on("click", function (event) {
         var temp = Math.floor(JSON.stringify((response.main.temp) - 273.15) * 9 / 5 + 32);
         var humidity = JSON.stringify(response.main.humidity);
         var windSpeed = JSON.stringify(response.wind.speed);
-        var latitude = JSON.stringify(response.coord.lat);
-        var longitude = JSON.stringify(response.coord.lon);
         var weatherIcon = (response.weather[0].icon)
         
         var today = new Date();
